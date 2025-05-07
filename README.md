@@ -3,6 +3,8 @@
 This code base is build upon [PhotoDoodle(2025)](https://arxiv.org/abs/2502.14397)
 Please refer to this [repo](https://github.com/showlab/PhotoDoodle) for orginal implementation.
 
+<img src='./assets/Source_1.png' width='100%' />
+
 ## Quick Start
 ### 1. **Environment setup**
 ```bash
@@ -29,6 +31,12 @@ After downloading the data, unzip the file and place the files under `data/` dir
 Two jsonl dataset are already available for use:
 `meta.jsonl` PhotoDoodle style dataset containing source view, target view and empty text prompt, which can be used in first stage training.
 `transformation_dataset` contains source, target, test source images as well as relative transformations.
+
+Example format:
+```
+{"source": "path/to/source.jpg", "target": "path/to/modified.jpg", "text": ""}
+{"source": "path/to/source2.jpg", "target": "path/to/modified2.jpg", "text": ""}
+```
 
 You can also generate new data with the provided python program: `blend.py`, `transform_data_converter.py`
 
