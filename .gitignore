@@ -1,0 +1,11 @@
+edit*
+outputs*
+venv
+wandb
+*.safetensors
+*/**/__pycache__
+.DS_Store
+*.yaml
+scripts
+PhotoDoodle_Pretrain
+data
